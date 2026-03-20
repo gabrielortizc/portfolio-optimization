@@ -3,8 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mtick
 
-TRADING_DAYS = 252
-RISK_FREE     = 0.1075
+from config import TRADING_DAYS, RISK_FREE
 
 # -------------------------------------------------------------------
 # Métricas de performance

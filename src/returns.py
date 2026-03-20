@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mtick
 
-TRADING_DAYS = 252  # dias úteis no ano
+from config import TRADING_DAYS
 
 # -------------------------------------------------------------------
 # Ativos (sem benchmarks — eles entram só na comparação)

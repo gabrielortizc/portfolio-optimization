@@ -4,8 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as mtick
 from scipy.optimize import minimize
 
-TRADING_DAYS = 252
-RISK_FREE     = 0.1075  # Selic aproximada 2024
+from config import TRADING_DAYS, RISK_FREE
 
 # -------------------------------------------------------------------
 # Simulação de portfólios aleatórios
