@@ -27,9 +27,8 @@ def download_prices(
 
     raw    = yf.download(tickers, start=start, end=end, auto_adjust=True)
     prices = raw["Close"]
-
-    # Remove linhas onde TODOS os ativos são NaN
-    prices.dropna(how="all", inplace=True)
+    
+    prices = prices.dropna(how="all")
 
     prices.to_csv(save_path)
     print(f"Salvo em '{save_path}' — shape: {prices.shape}")
